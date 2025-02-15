@@ -1,0 +1,46 @@
+.main {
+  height: 75vh;
+  display: flex; 
+}
+.main-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.main-title h1 {
+  color: var(--cor-5);
+  font-size: 5rem;
+  text-align: center;
+  font-family: "IvyPresto Display";
+  font-weight: 100;
+  letter-spacing: -4px;
+  line-height: 1;
+}
+.main-title span {
+  font-family:"Satoshi" ;
+  font-weight: 500;
+  font-size: 4.8rem;
+}
+
+.main-subtext {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.main-btn {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px
+}
+.main-btn button:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

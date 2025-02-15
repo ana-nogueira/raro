@@ -1,0 +1,97 @@
+.button {
+  padding: 12px 24px;
+  cursor:pointer;
+  border-radius: 38px;
+}
+.btn-light {
+  background: none;
+  border: solid 2px var(--cor-5);
+}
+.btn-light:hover {
+  border: solid 2px var(--cor-1);
+  color: var(--cor-1) !important;
+  transition: .3s;
+  font-weight:500 ;
+}
+.btn-solid{
+  background: var(--cor-5);
+}
+.btn-solid-light {
+  background: var(--cor-7);
+  border: none;
+}
+.btn-solid:hover,.btn-solid-light:hover  {
+  border: none;
+  transition: .3s;
+}
+
+.btn-solid:hover {
+  background-color: var(--cor-6);
+}
+
+.btn-solid-light:hover {
+  background-color: var(--cor-5);
+  color: #fff;
+}
+
+/*ICONE FLUTUANTE DE CONTATO   */
+
+.contact-window {
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: #fff; 
+  padding: 10px 15px;
+  border-radius: 8px; 
+  z-index: 9999; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact-window-wrapper {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact-window-text h3 {
+font-size: 1rem;
+font-weight: 300;
+}
+.contact-window-text p {
+  font-size: .8rem;
+  font-weight: 300;
+  position: relative;
+}
+
+.contact-window-text p::after {
+content: "";  
+display: inline-block;
+position: absolute;
+left: 93px;
+top: 5px;
+height: 8px;
+width: 8px;
+border-radius: 8px;
+background-color: #48AB3A;
+
+}  
+
+.contact-window button {
+  padding: 10px 20px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 25px;
+}
+
+.close-contact {
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  color: #A2A4C3;
+}
