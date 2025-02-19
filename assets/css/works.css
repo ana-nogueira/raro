@@ -1,0 +1,15 @@
+.best-works-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 15px;
+}
+
+.best-works-title h2 {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.best-works-title button {
+    font-size: 1rem;
+}
