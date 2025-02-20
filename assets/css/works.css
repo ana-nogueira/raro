@@ -13,3 +13,42 @@
 .best-works-title button {
     font-size: 1rem;
 }
+
+.best-works-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr 1fr 3fr;
+    gap: 10px;
+
+}
+.item {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.item:hover {
+    cursor: pointer; 
+}
+
+.item:hover img {
+    filter: brightness(50%);
+}
+.item img {
+width: 100%;
+object-fit: cover;
+    display: block;
+    transition: 0.3s ease-in-out
+
+}
+
+.amar {
+    align-items: start;
+}
+
+.saviato {
+    grid-row: 1/3
+}
+.pet {
+grid-row: 2/-1;
+}
