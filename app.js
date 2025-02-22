@@ -21,3 +21,27 @@ function handleClick(event) {
     contactWindowOpened.classList.add('active');
   }
 }
+
+/* ITEM DESCRIPTION */
+
+const workItems = document.querySelectorAll('.item');
+const itemDescription = document.querySelector('.item-description');
+
+workItems.forEach((item) => {
+  item.addEventListener('mouseenter', mouseEnter);
+  item.addEventListener('mouseleave', mouseLeave);
+});
+
+function mouseEnter(event) {
+  const itemDesc = event.currentTarget.querySelector('.item-description');
+  if (itemDesc) {
+    itemDesc.classList.add('active');
+  }
+}
+
+function mouseLeave(event) {
+  const itemDesc = event.currentTarget.querySelector('.item-description');
+  if (itemDesc) {
+    itemDesc.classList.remove('active');
+  }
+}
