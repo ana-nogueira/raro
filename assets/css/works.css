@@ -31,8 +31,8 @@
 .item-description {
     width: 95%;
     position: absolute;
-    bottom: 10px;
-    display: flex;
+    bottom: 5px;
+    display: none;
     justify-content: space-between;
     padding: 14px;
     font-weight: 100;

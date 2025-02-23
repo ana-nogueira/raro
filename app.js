@@ -34,14 +34,10 @@ workItems.forEach((item) => {
 
 function mouseEnter(event) {
   const itemDesc = event.currentTarget.querySelector('.item-description');
-  if (itemDesc) {
-    itemDesc.classList.add('active');
-  }
+  itemDesc.classList.add('active')
 }
 
 function mouseLeave(event) {
   const itemDesc = event.currentTarget.querySelector('.item-description');
-  if (itemDesc) {
     itemDesc.classList.remove('active');
-  }
 }
