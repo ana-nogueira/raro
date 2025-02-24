@@ -73,11 +73,11 @@
 }
 
 
-.contact-window-closed-img{
+.online-icon{
   position: relative;
 }
 
-.contact-window-closed-img::after {
+.online-icon::after {
 content: "";  
 display: inline-block;
 position: absolute;
