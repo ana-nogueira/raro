@@ -34,10 +34,28 @@ workItems.forEach((item) => {
 
 function mouseEnter(event) {
   const itemDesc = event.currentTarget.querySelector('.item-description');
-  itemDesc.classList.add('active')
+  itemDesc.classList.add('active');
 }
 
 function mouseLeave(event) {
   const itemDesc = event.currentTarget.querySelector('.item-description');
-    itemDesc.classList.remove('active');
+  itemDesc.classList.remove('active');
+}
+
+/*TROCAR COR DAS SETAS NO HOVER */
+
+const setasBrancas = document.querySelectorAll('.change-arrow');
+
+const white = './assets/img/seta.svg';
+const blue = './assets/img/setablue.svg';
+
+setasBrancas.forEach((item) => {
+  item.addEventListener('mouseenter', (event) => changeColor(event, white));
+  item.addEventListener('mouseleave', (event) => changeColor(event, blue));
+});
+
+function changeColor(event, color) {
+  console.log(color);
+  const img = event.currentTarget.querySelector('.seta-branca');
+  img.setAttribute('src', color);
 }
