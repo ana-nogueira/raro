@@ -6,8 +6,9 @@
 }
 
 .best-works-title h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 100;
+    letter-spacing: -1px;
 }
 
 .best-works-title button {
