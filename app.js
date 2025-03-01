@@ -59,3 +59,8 @@ function changeColor(event, color) {
   const img = event.currentTarget.querySelector('.seta-branca');
   img.setAttribute('src', color);
 }
+
+/* SERVICES SLIDER*/
+
+const copy = document.querySelector('.services-slide').cloneNode(true);
+document.querySelector('.services').appendChild(copy);
