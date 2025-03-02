@@ -1,0 +1,33 @@
+
+.card-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 50px 10px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--cor-0);
+  border-radius: 10px;
+  padding: 30px;
+  width: 360px;
+  height: 370px;
+}
+.card-testimonial img {
+  margin-bottom: 20px;
+  fill:antiquewhite;
+}
+.card-testimonial p {
+  line-height: 1.5;
+}
+.card-autor {
+  display: flex;
+  gap: 15px;
+}
+.card-autor li span {
+  color: #23266E80;
+  font-size: .8rem;
+}

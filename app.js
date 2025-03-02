@@ -64,3 +64,5 @@ function changeColor(event, color) {
 
 const copy = document.querySelector('.services-slide').cloneNode(true);
 document.querySelector('.services').appendChild(copy);
+
+
