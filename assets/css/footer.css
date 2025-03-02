@@ -1,0 +1,42 @@
+.footer-bg {
+  background: linear-gradient(to bottom, #1B1C41, #23266E);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+.footer h1 {
+  font-family: 'IvyPresto Display';
+  font-weight: 100;
+  margin-left: 10px;
+  font-size: 11rem;
+  letter-spacing: 2px;
+  color: var(--cor-2);
+}
+
+.footer h1:hover {
+  cursor: pointer;
+  color: var(--cor-6);
+  transition: .5s ease-in-out;
+
+}
+
+.footer-contact ul {
+  color: #E6F2FF;
+  display: flex;
+  padding: 32px 10px ;
+}
+
+.footer-contact ul li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  font-size: .6rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}

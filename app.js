@@ -1,3 +1,43 @@
+/*TESTIMONIALS FETCH */
+
+const cardList = document.querySelector('.card-list');
+const url = './testimonials.json';
+
+const getData = () => {
+  fetch(url)
+    .then((r) => r.json())
+    .then((body) => body.map((item) => setData(item)));
+};
+
+getData();
+
+const setData = (testimonial) => {
+  let newTestimonial = document.createElement('div');
+  newTestimonial.classList.add('card-item');
+  newTestimonial.innerHTML = `
+ <div class="card-testimonial">
+          <img src="./assets/img/quote.svg" alt="">
+          <p class="cor-5">${testimonial.text}</p>
+        </div>
+        <div class="card-autor">
+          <img src="./assets/img/${testimonial.profilePic}" alt="">
+          <ul>
+            <li>
+              <h4 class="cor-5">
+                ${testimonial.name}
+              </h4>
+            </li>
+            <li><span>${testimonial.business}</span></li>
+          </ul>
+        </div>
+ `;
+  cardList.append(newTestimonial);
+};
+
+
+
+/*CHAT WINDOW */
+
 const closeBtn = document.querySelector('.close-contact');
 const contactWindowOpened = document.querySelector('.contact-window-open');
 const contactWindowClosed = document.querySelector('.contact-window-closed');
@@ -64,5 +104,3 @@ function changeColor(event, color) {
 
 const copy = document.querySelector('.services-slide').cloneNode(true);
 document.querySelector('.services').appendChild(copy);
-
-
